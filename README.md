@@ -1,4 +1,7 @@
 # AnonymousQuestions
+
+[![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
+
 Aplicação criada com o intuito de auxiliar alunos do Projeto CRESCER a fazerem perguntas privadas e anônimas aos instrutores.
 
 **EM DESENVOLVIMENTO**
