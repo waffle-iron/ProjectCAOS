@@ -1,9 +1,9 @@
 import * as mongoose from 'mongoose';
 import * as Utils from './../utils';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import { UserEntity } from './entity.user';
 
-let config: Configuration.IConfiguration = require('./../config/config.json');
+let config: Configuration.IConfiguration = require('./../../config/config.json');
 
 export namespace Database {
 

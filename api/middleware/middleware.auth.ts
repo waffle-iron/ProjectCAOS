@@ -1,10 +1,10 @@
 import * as express from 'express';
 import { verify, JsonWebTokenError } from 'jsonwebtoken';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import * as Response from './../response';
 import { User } from './../database/entity.user';
 
-let config: Configuration.IConfiguration = require('./../config/config.json');
+let config: Configuration.IConfiguration = require('./../../config/config.json');
 
 export namespace AuthenticationMiddleware {
 

@@ -1,7 +1,7 @@
 import * as http from 'http';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import { Database } from './../database';
 import * as Response from './../response';
 import * as Business from './../business';
@@ -12,7 +12,7 @@ import { LoginRoutes } from './routes.login';
 export namespace Routes {
 
     let application: express.Express = express();
-    let config: Configuration.IConfiguration = require('./../config/config.json');
+    let config: Configuration.IConfiguration = require('./../../config/config.json');
 
     export async function createServer(): Promise<http.Server> {
         return new Promise<http.Server>((resolve: Function, reject: Function) => {

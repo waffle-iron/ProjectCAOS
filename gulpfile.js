@@ -5,8 +5,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 
 var tsProject = ts.createProject('tsconfig.json');
-var configJSON = 'api/config/config.json';
-var testFiles = 'api/test/*.js';
+var configJSON = 'config/config.json';
 
 gulp.task('default', () => {
     return runSequence('lint', 'cleanDist', 'build');
@@ -38,16 +37,10 @@ gulp.task('buildProject', () => {
 
 gulp.task('copyAssets', () => {
     return gulp
-        .start('copyConfigJSON')
-        .start('copyTestsDirectory');
+        .start('copyConfigJSON');
 });
 
 gulp.task('copyConfigJSON', () => {
     return gulp.src(configJSON)
-        .pipe(gulp.dest('dist/config'));
-});
-
-gulp.task('copyTestsDirectory', () => {
-    return gulp.src(testFiles)
-        .pipe(gulp.dest('dist/test'));
+        .pipe(gulp.dest('dist/config/'));
 });

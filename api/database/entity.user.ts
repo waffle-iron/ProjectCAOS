@@ -1,10 +1,10 @@
 import * as mongoose from 'mongoose';
 import { ObjectID } from 'mongodb';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import { Entity } from './';
 import * as autoIncrement from 'mongoose-sequence';
 
-let config: Configuration.IConfiguration = require('./../config/config.json');
+let config: Configuration.IConfiguration = require('./../../config/config.json');
 
 export interface IUser extends mongoose.Document {
     userId: number;

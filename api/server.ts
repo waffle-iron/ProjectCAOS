@@ -1,12 +1,12 @@
 import { Routes } from './routes';
-import { Configuration } from './config/config.api';
+import { Configuration } from './../config/config.api';
 import { Database } from './database';
 import { Server } from 'http';
 import * as Utils from './utils';
 
 (function startServer() {
 
-    let serverConfig: Configuration.IConfiguration = require('./config/config.json');
+    let serverConfig: Configuration.IConfiguration = require('./../config/config.json');
 
     Routes.createServer()
         .then((serverInstance: Server) => {

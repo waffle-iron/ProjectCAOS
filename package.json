@@ -4,10 +4,10 @@
   "description": "Application intended to help people ask technical questions anonymously.",
   "main": "dist/server.js",
   "scripts": {
-    "start": "node ~/Documents/github/AnonymousQuestions/dist/server.js",
+    "start": "node ~/Documents/github/AnonymousQuestions/dist/api/server.js",
     "start-db": "mongod --dbpath ~/Documents/mongodb/bin/data/db",
-    "test": "mocha dist/test/*.js",
-    "test-debug": "mocha dist/test/*.js --debug-brk",
+    "test": "mocha dist/api/test/*.js",
+    "test-debug": "mocha dist/api/test/*.js --debug-brk",
     "idkwid": "killall node",
     "build": "gulp"
   },

@@ -1,16 +1,16 @@
 import { User, UserBuilder, UserDAO } from './../database/entity.user';
 import { UserMapper } from './../response';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import { HmacSHA256 } from 'crypto-js';
 import * as Utils from './../utils';
 
-let config: Configuration.IConfiguration = require('./../config/config.json');
+let config: Configuration.IConfiguration = require('./../../config/config.json');
 
 export namespace UserBiz {
 
     export function seedDatabase(): Promise<any> {
         return new Promise<any>((resolve: Function, reject: Function) => {
-            let users: User[] = require(config.database.seed.module).User;
+            let users: User[] = require('./../../config/mongo-seed').User;
             users.forEach((user: User) => {
                 UserDAO.create(user)
                     .then((created: User) => Utils.Logger.logAndNotify(`seeded User ${created.username}`, 'mongodb-seed'))

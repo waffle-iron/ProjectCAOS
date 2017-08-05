@@ -1,10 +1,10 @@
 import { User, UserBuilder, UserDAO } from './../database/entity.user';
 import { UserMapper } from './../response';
-import { Configuration } from './../config/config.api';
+import { Configuration } from './../../config/config.api';
 import { HmacSHA256 } from 'crypto-js';
 import { sign, SignOptions } from 'jsonwebtoken';
 
-let config: Configuration.IConfiguration = require('./../config/config.json');
+let config: Configuration.IConfiguration = require('./../../config/config.json');
 
 export namespace LoginBiz {
 
