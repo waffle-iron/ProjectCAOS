@@ -1,25 +1,34 @@
-# AnonymousQuestions
-
-[![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
+# Anonymous Questions [![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
 
 Aplicação criada com o intuito de auxiliar alunos do Projeto CRESCER a fazerem perguntas privadas e anônimas aos instrutores.
 
-**EM DESENVOLVIMENTO**
+[**Trello**: informações do que está sendo/ainda será feito](https://trello.com/b/wmcOsXBx/anonymousquestions)
 
-Para instalar as dependências, utilize o comando `npm install` na raiz do repositório.
+# Quickstart
 
-Para realizar o build da API, utilize o comando `gulp`.
+- Para **instalar as dependências**, utilize o comando `npm install` na raiz do repositório.
 
-Para inicializar o banco, utilize o comando `npm run start-db`. 
+- Para realizar o **build da API**, utilize o comando `npm run build`.
 
-Para inicializar a API (depois do build), use o comando `npm run start`.
+- Para inicializar o **banco**, utilize o comando `npm run start-db`. 
 
-**TODO**: Criar informações dos demais scripts do `package.json`.
+- Para inicializar a **API** (depois do build), use o comando `npm run start`.
 
-**TODO**: criar tutorial de como instalar o mongo-db.
+## TODOs
+- Criar informações dos demais scripts do `package.json`.
 
-O diretório `api` é destinada à API com os serviços a serem consumidos pela aplicação (*back-end* real).
+- Criar tutorial de como instalar o mongo-db.
 
-O diretório `app` é destinado à criação do *front-end* e ao servidor para servir os *assets* (como `.js`, `.htlm` e `.css`).
+# Arquitetura
 
-[Informações do que está sendo/ainda será feito](https://trello.com/b/wmcOsXBx/anonymousquestions)
+A aplicação consiste de um conjunto de serviços disponibilizados pela API a serem consumidos pelo client (*front-end*).
+
+Os serviços da API (que realizam tarefas e acessam o DB) rodam em um servidor à parte do servidor de *assets*.
+
+Ambos utilizam **Node.js** e **Typescript**. A API utiliza autenticação via **WebToken (JWT)** e **MongoDB** como banco de dados. O *front-end* está montado utilizando **Sass** e **Vue.js**.
+
+# Modelo de projeto
+
+O diretório `api` é destinado à API com os serviços a serem consumidos pela aplicação (*back-end* real).
+
+O diretório `app` é destinado à criação do *front-end* e ao servidor de *assets* (como `.js`, `.htlm` e `.css`).
