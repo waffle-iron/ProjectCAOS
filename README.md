@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/mateusbpt/ProjectCAOS.png?label=ready&title=Ready)](https://waffle.io/mateusbpt/ProjectCAOS?utm_source=badge)
 # ProjectCAOS - Controlling Activities Of Students [![Build Status](https://travis-ci.org/mateusbpt/ProjectCAOS.svg?branch=master)](https://travis-ci.org/mateusbpt/ProjectCAOS)
 
 Aplicação criada com o objetivo ajudar na organização das avaliações dos repositórios dos estudantes do Projeto Crescer.
