@@ -1,4 +1,4 @@
-# ProjectCAOS - Controlling Activities Of Students [![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
+# ProjectCAOS - Controlling Activities Of Students [![Build Status](https://travis-ci.org/mateusbpt/ProjectCAOS.svg?branch=master)](https://travis-ci.org/mateusbpt/ProjectCAOS)
 
 Aplicação criada com o objetivo ajudar na organização das avaliações dos repositórios dos estudantes do Projeto Crescer.
 
