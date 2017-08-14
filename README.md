@@ -1,6 +1,6 @@
-# Anonymous Questions [![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
+# ProjectCAOS - Controlling Activities Of Students [![Build Status](https://travis-ci.com/mateusbpt/AnonymousQuestions.svg?token=jbaV8zATZzNszqyfZwDD&branch=master)](https://travis-ci.com/mateusbpt/AnonymousQuestions)
 
-Aplicação criada com o intuito de auxiliar alunos do Projeto CRESCER a fazerem perguntas privadas e anônimas aos instrutores.
+Aplicação criada com o objetivo ajudar na organização das avaliações dos repositórios dos estudantes do Projeto Crescer.
 
 [**Trello**: informações do que está sendo/ainda será feito](https://trello.com/b/wmcOsXBx/anonymousquestions)
 
